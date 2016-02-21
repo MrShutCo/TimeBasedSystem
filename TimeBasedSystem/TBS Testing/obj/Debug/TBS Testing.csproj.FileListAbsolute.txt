@@ -1,0 +1,8 @@
+C:\Users\Tyler Safaric\Desktop\Projects\TimeBasedSystem\TimeBasedSystem\TBS Testing\bin\Debug\TBS Testing.exe.config
+C:\Users\Tyler Safaric\Desktop\Projects\TimeBasedSystem\TimeBasedSystem\TBS Testing\bin\Debug\TBS Testing.exe
+C:\Users\Tyler Safaric\Desktop\Projects\TimeBasedSystem\TimeBasedSystem\TBS Testing\bin\Debug\TBS Testing.pdb
+C:\Users\Tyler Safaric\Desktop\Projects\TimeBasedSystem\TimeBasedSystem\TBS Testing\obj\Debug\TBS Testing.exe
+C:\Users\Tyler Safaric\Desktop\Projects\TimeBasedSystem\TimeBasedSystem\TBS Testing\obj\Debug\TBS Testing.pdb
+C:\Users\Tyler Safaric\Desktop\Projects\TimeBasedSystem\TimeBasedSystem\TBS Testing\bin\Debug\TimeBasedSystem.dll
+C:\Users\Tyler Safaric\Desktop\Projects\TimeBasedSystem\TimeBasedSystem\TBS Testing\bin\Debug\TimeBasedSystem.pdb
+C:\Users\Tyler Safaric\Desktop\Projects\TimeBasedSystem\TimeBasedSystem\TBS Testing\obj\Debug\TBS Testing.csprojResolveAssemblyReference.cache

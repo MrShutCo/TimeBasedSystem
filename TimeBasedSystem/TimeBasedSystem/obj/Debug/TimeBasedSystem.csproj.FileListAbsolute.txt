@@ -1,0 +1,5 @@
+C:\Users\Tyler Safaric\Desktop\Projects\TimeBasedSystem\TimeBasedSystem\TimeBasedSystem\bin\Debug\TimeBasedSystem.dll
+C:\Users\Tyler Safaric\Desktop\Projects\TimeBasedSystem\TimeBasedSystem\TimeBasedSystem\bin\Debug\TimeBasedSystem.pdb
+C:\Users\Tyler Safaric\Desktop\Projects\TimeBasedSystem\TimeBasedSystem\TimeBasedSystem\obj\Debug\TimeBasedSystem.csprojResolveAssemblyReference.cache
+C:\Users\Tyler Safaric\Desktop\Projects\TimeBasedSystem\TimeBasedSystem\TimeBasedSystem\obj\Debug\TimeBasedSystem.dll
+C:\Users\Tyler Safaric\Desktop\Projects\TimeBasedSystem\TimeBasedSystem\TimeBasedSystem\obj\Debug\TimeBasedSystem.pdb
