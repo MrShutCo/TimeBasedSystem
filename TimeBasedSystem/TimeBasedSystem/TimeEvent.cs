@@ -5,7 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace TimeBasedSystem {
-    public class Event {
+
+    public delegate void Event();
+
+    public class TimeEvent {
 
         public int StartTime
         {
@@ -27,27 +30,28 @@ namespace TimeBasedSystem {
         int duration;
         int currTime;
 
-        public Event(string name, int start, int dur) {
-            StartTime = start;
-            duration = dur;
-            currTime = start;
-            EventName = name;
-        }
-
-        public void Update(int time) {
-            if (!HasEnded()) {
-                currTime += time;
-            }
-        }
-
-        public bool HasEnded()
-        {
-            if (currTime >= EndTime) {
-                Console.WriteLine("Event {0} has ended", EventName);
+        public bool IsActive() {
+            if (currTime >= StartTime && currTime <= EndTime) {
+                Event.Invoke();
                 return true;
             }
             return false;
         }
 
+        public event Event Event;
+
+        public TimeEvent(Event eventNow, int currentTime, int start, int dur) {
+            StartTime = start;
+            currTime = currentTime;
+            duration = dur;
+            Event = eventNow;
+        }
+
+        public void Update(int time) {
+            currTime += time;
+            if (IsActive()) {
+                //Just to call it
+            }
+        }
     }
 }

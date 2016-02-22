@@ -10,27 +10,28 @@ namespace TimeBasedSystem
     {
 
         Timer Time;
-        List<Event> EventList;
+        public Dictionary<string, User> GlobalUsers;
 
         public TimeSystem() {
             Time = new Timer();
-            EventList = new List<Event>();
+            GlobalUsers = new Dictionary<string, User>();
         }
 
         public void Update() {
             Time.Update();
-            for (int i = 0; i < EventList.Count; i++) {
-                EventList[i].Update(Time.TimeStep);
-                if (EventList[i].HasEnded()) {
-                    EventList.RemoveAt(i);
+            foreach(var value in GlobalUsers.Values) {
+                foreach(var value2 in value.userEvents.Values) {
+                    value2.Update(Time.TimeStep);
                 }
-                
             }
         }
 
-        public void AddEvent(string name, int start, int duration) {
-            Console.WriteLine("Event created at time: {0}", start);
-            EventList.Add(new Event(name, start, duration));
+        public User GetUser(string name) {
+            return GlobalUsers[name];
+        }
+
+        public void AddUser(string name) {
+            GlobalUsers.Add(name, new User());
         }
 
     }
